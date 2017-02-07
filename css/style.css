@@ -1,0 +1,310 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Space Mono', monospace;
+	line-height: 1.6;
+	color: #566879;
+	font-size: .90em;
+}
+
+p {
+	font-size: 1em;
+	margin: 0;
+}
+
+
+h2,
+h3 {
+	color: #2D3944;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Space Mono', monospace;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+fieldset,
+input,
+select,
+textarea,
+button {
+	border-style: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+input:focus,
+textarea:focus {
+	outline: 0;
+}
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Header ---- */
+
+div.main {
+	background-color: #2D3944;
+}
+
+header {
+	margin-bottom: .25em;
+}
+
+header h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.75em;
+	padding: 1em 0;
+}
+
+div.info {
+	width: 90%;
+	margin: 0 auto;
+	border-bottom: solid 4px #2D3944;
+}	
+
+.info span {
+	font-weight: 700;
+	color: #2D3944;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 1.35em;
+	padding: 1.25em 0 .5em;
+
+}
+
+.info p {
+	padding: 0 .5em 1.5em;
+	text-align: center;
+	color: #ABB3BC;
+	line-height: 1.2em;
+}
+
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
+/* ---- Form Elements ---- */
+
+.contact {
+	border-bottom: solid 2px #2D3944;
+	padding-bottom: 1em;
+}
+
+.contact legend {
+	border-top: solid 2px #2D3944;
+	width: 100%;
+}
+
+.contact legend,
+.newsletter legend:first-child {
+	font-weight: 700;
+	padding-top: 1.25em;
+	padding-bottom: 1em;
+	font-size: 1.25em;
+	color: #2D3944;
+}
+
+.contact input,
+.contact select {
+	display: block;
+	width: 100%;
+	height: 50px;
+	background-color: #EFF0F1;
+	border-radius: 6px;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+input[placeholder="Required"] {
+	text-align: right;
+	padding-right: 1.5em;
+	font-size: .75em;
+	font-style: italic;
+}
+
+label[for="other"] {
+	display: block;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	background-color: #EFF0F1;
+	border-radius: 6px;
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+
+button {
+	background-color: #53BBB4;
+	width: 100%;
+	height: 75px;
+	color: #fff;
+	font-size: 2em;
+	font-weight: 700;
+	border-radius: 6px;
+	margin-bottom: 1em;
+}
+.newsletter span {
+	display: block;
+	padding-bottom: 1.25em;
+}
+.newsletter p {
+	font-style: italic;
+	text-align: center;
+	font-size: .75em;
+	padding-bottom: 20em;
+}
+
+.newsletter input {
+	margin-left: .25em;
+}
+
+.newsletter label {
+	display: inline-block;
+	margin-bottom: 1em;
+	padding-left: 1em;
+}
+
+label[for="jsnews"] {
+	margin-bottom: 2em;
+}
+
+select:first-child {
+	color: #B0B1B1;
+}
+
+textarea[placeholder="Let us know what you want."] {
+	font-style: italic;
+	padding-left: .5em;
+	padding-top: .5em;
+}
+
+textarea[placeholder="Let us know what you want."]:focus {
+	font-style: normal;
+	
+}
+
+input,
+textarea {
+	transition: all 0.25s ease-in;
+	-webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+}
+
+/* ---- Psuedo Classes ---- */
+
+input:focus,
+textarea:focus {
+	border: solid 2px #476A8A;
+	background-color: #fff;
+}
+
+input[placeholder="Required"]:focus {
+	text-align: left;
+	font-style: normal;
+	font-size: initial;
+}
+
+
+.contact input:last-child {
+	width: 50%;
+}
+
+.newsletter legend:nth-child(n+2) {
+	padding-bottom: 1em;
+	margin-left: .25em;
+}
+
+
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+div.info {
+	max-width: 60%;
+}
+.container {
+	max-width: 60%;
+}
+
+.contact input {
+	width: 68%;
+	display: inline-block;
+	clear: both;
+}
+
+.contact select {
+	width: 68%;
+	display: inline-block;
+	clear: both;
+	text-align: left;
+
+	
+}
+
+.contact label {
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+	clear: both;
+	/*margin-right: 3em;*/
+
+}
+
+.contact input:last-child {
+	width: 30%;
+}
+
+/*label[for="city"] {
+	margin-right: 9em;
+}
+
+label[for="state"] {
+	margin-right: 9.5em;
+}*/
+
+.newsletter legend:nth-child(n+2) {
+	margin-left: 0;
+}
+
+.newsletter label:last-of-type {
+	padding-left: 0;
+}
+
+}
