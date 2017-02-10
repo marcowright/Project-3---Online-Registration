@@ -101,7 +101,6 @@ div.info {
 }
 
 
-
 /* ---- Layout Containers ---- */
 
 .container {
@@ -113,10 +112,6 @@ div.info {
 
 /* ---- Form Elements ---- */
 
-.contact {
-	border-bottom: solid 2px #2D3944;
-	padding-bottom: 1em;
-}
 
 .contact legend {
 	border-top: solid 2px #2D3944;
@@ -130,6 +125,10 @@ div.info {
 	padding-bottom: 1em;
 	font-size: 1.25em;
 	color: #2D3944;
+}
+
+.newsletter span {
+	padding-left: .5em;
 }
 
 .contact input,
@@ -186,13 +185,13 @@ button {
 }
 
 .newsletter input {
-	margin-left: .25em;
+	margin-left: .75em;
 }
 
 .newsletter label {
 	display: inline-block;
 	margin-bottom: 1em;
-	padding-left: 1em;
+	padding-left: .5em;
 }
 
 label[for="jsnews"] {
@@ -291,13 +290,13 @@ div.info {
 	width: 30%;
 }
 
-/*label[for="city"] {
-	margin-right: 9em;
+.newsletter span {
+	padding-left: 0;
 }
 
-label[for="state"] {
-	margin-right: 9.5em;
-}*/
+.newsletter input {
+	margin-left: .25em;
+}
 
 .newsletter legend:nth-child(n+2) {
 	margin-left: 0;
